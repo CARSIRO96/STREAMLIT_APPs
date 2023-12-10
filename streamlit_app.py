@@ -21,3 +21,4 @@ app =FastAPI()
 @app.get('/intro') 
 def index(): 
    return 'FASTAPI'
+
