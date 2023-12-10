@@ -26,5 +26,5 @@ param1 = params.get('param1', None)
 param2 = params.get('param2', None)
 if param1: 
     st.write(
-        'parámetro1🟰 ', param2[0]
+        'parámetro1🟰 ', param1[0]
              )
