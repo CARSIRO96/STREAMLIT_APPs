@@ -20,5 +20,11 @@ app =FastAPI()
  #https://ominous-enigma-6w7645wqq44f4gw4-8000.app.github.dev/ 
 @app.get('/intro') 
 def index(): 
-   return 'FASTAPI'
-
+    return 'FASTAPI' 
+params = st.experimental_get_query_params()
+param1 = params.get('param1', None)
+param2 = params.get('param2', None)
+if param1: 
+    st.write(
+        'parámetro1🟰 ', param2[0]
+             )
